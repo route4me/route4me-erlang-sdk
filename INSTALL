@@ -1,0 +1,25 @@
+The project is a code base, and has no external dependencies.
+You can place source files from the code base of the library 
+to your Erlang project and use further according to examples 
+found in er4cli_tests.erl
+
+The library itself needs 3 files: 
+  er4cli.erl - api calls/wrappers
+  er4cli.hrl - defines
+  json2.erl  - 3rd party json library
+
+Source file er4cli_tests.erl contains samples
+
+After inserting source codes into your project you should add
+to your Erlang/OTP application dependency from inets and ssl
+application. The following can be an example of your app file:
+
+  {application, YOUR_APP,
+   [{description, "..."},
+    {vsn, "1"},
+    {registered, []},
+    {applications, [kernel, stdlib, sasl, inets, ssl]},
+    {mod, {YOUR_APP_MODULE, []}},
+    {env, []},
+    {modules,[YOUR_MODULE_LIST]}
+   ]}.
