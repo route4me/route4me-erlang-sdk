@@ -120,4 +120,4 @@ end,
 
 ### More examples
 
-Please see er4cli_tests.erl for more examples. Functions 'test_addrs_...' provide sample address lists for 'test_...' function, which demonstrate examples of Route & GPS calls and some optimization problems (single driver, round trip, multiple driver, time window, re-optimization).
+Please see test/*.erl for more examples. In the module test/utils.erl functions 'test_addrs_...' provide sample address lists for 'test_...' function from gps.erl, multiple_driver.erl, reoptimize.erl, route.erl, and single_driver.erl modules, which are to demonstrate examples of Route & GPS calls and some optimization problems (single driver, round trip, multiple driver, time window, re-optimization).
